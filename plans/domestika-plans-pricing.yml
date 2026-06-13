@@ -1,0 +1,85 @@
+specificationVersion: "0.1"
+id: domestika-plans-pricing
+name: Domestika Plans and Pricing
+description: >
+  Domestika offers individual course purchases, a Domestika Plus subscription,
+  and Domestika for Business team plans. Individual courses are priced around
+  $70-$80 each. Domestika Plus provides unlimited access to the course library
+  at approximately $12/month or $169.99/year. Business plans provide seat-based
+  access for organizations with team management dashboards and progress tracking.
+  Enterprise accounts with 50+ seats include personalized service and custom pricing.
+url: https://www.domestika.org/en/organizations
+created: 2026-06-13
+modified: 2026-06-13
+plans:
+  - name: Individual Course
+    description: >
+      Purchase individual courses from the Domestika catalog. Each course
+      includes video lessons, project resources, and a certificate of completion.
+    type: pay-as-you-go
+    pricing:
+      - price: 70.00
+        unit: course
+        currency: USD
+        notes: Prices typically range from $70-$80 per course; frequent promotional discounts available.
+  - name: Domestika Plus
+    description: >
+      Monthly or annual subscription providing unlimited access to the full
+      Domestika course library including new releases, live sessions, and
+      exclusive content for subscribers.
+    type: subscription
+    pricing:
+      - price: 12.00
+        unit: month
+        currency: USD
+        billingCycle: monthly
+      - price: 169.99
+        unit: year
+        currency: USD
+        billingCycle: annually
+  - name: Business 10 Seats
+    description: >
+      Team plan for up to 10 learners. Includes a management dashboard,
+      login assignment controls, progress tracking, and completion certificates.
+    type: subscription
+    pricing:
+      - price: 150.00
+        unit: bundle
+        currency: USD
+        notes: 50% discount off list price of $299.
+    seats: 10
+  - name: Business 20 Seats
+    description: >
+      Team plan for up to 20 learners. Includes all Business 10 features plus
+      expanded seat capacity and greater per-seat savings.
+    type: subscription
+    pricing:
+      - price: 250.00
+        unit: bundle
+        currency: USD
+        notes: 58% discount off list price of $599.
+    seats: 20
+  - name: Business 50 Seats
+    description: >
+      Team plan for up to 50 learners. Includes all lower-tier Business features
+      plus personalized service and dedicated onboarding support.
+    type: subscription
+    pricing:
+      - price: 550.00
+        unit: bundle
+        currency: USD
+        notes: 63% discount off list price of $1,499.
+    seats: 50
+  - name: Business Enterprise
+    description: >
+      Custom enterprise plan for organizations requiring more than 50 seats.
+      Includes dedicated account management, custom integrations, advanced
+      security features, and flexible contract terms. Contact Domestika sales
+      for a custom quote.
+    type: custom
+    pricing:
+      - price: 0.00
+        unit: custom
+        currency: USD
+        notes: Contact Domestika sales team for enterprise pricing.
+    seats: 51+

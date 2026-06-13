@@ -1,0 +1,49 @@
+specificationVersion: "0.1"
+id: domestika-rate-limits
+name: Domestika API Rate Limits
+description: >
+  Domestika does not publish formal public API rate limit documentation, as the
+  api.domestika.org endpoint is an internal API powering the platform rather than
+  a publicly offered developer API. The following entries reflect best-practice
+  inferences based on the platform type and observed behavior from community
+  research. Organizations requiring formal integration SLAs should contact
+  Domestika directly.
+url: https://www.domestika.org/en/about/contact
+created: 2026-06-13
+modified: 2026-06-13
+rateLimits:
+  - name: Authenticated Requests
+    description: >
+      Requests made with a valid session token or API credential. Used by the
+      Domestika web and mobile applications to access course catalog, user
+      profile, and enrollment endpoints.
+    type: requests
+    limit: undisclosed
+    period: undisclosed
+    scope: per-user
+    notes: >
+      Domestika does not publicly document rate limits for its API. Consumers
+      should implement exponential back-off and respect HTTP 429 responses.
+  - name: Unauthenticated Requests
+    description: >
+      Public catalog browsing requests without authentication. Domestika's
+      course catalog pages are publicly accessible but heavier scraping or
+      automated access may be throttled.
+    type: requests
+    limit: undisclosed
+    period: undisclosed
+    scope: per-ip
+    notes: >
+      Automated or high-frequency access without authentication is likely
+      subject to IP-level throttling and may require CAPTCHA verification.
+  - name: Business Dashboard API
+    description: >
+      API calls made through the Domestika for Business management dashboard
+      for seat assignment, user management, and progress tracking operations.
+    type: requests
+    limit: undisclosed
+    period: undisclosed
+    scope: per-organization
+    notes: >
+      Enterprise and Business plan customers should contact Domestika support
+      for specific rate limit information relevant to their integration needs.

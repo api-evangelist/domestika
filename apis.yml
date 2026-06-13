@@ -1,0 +1,75 @@
+aid: domestika
+name: Domestika
+description: >
+  Domestika is an online creative education platform that connects over 8 million
+  creative professionals and learners with high-quality courses across illustration,
+  design, photography, marketing, and more. The platform provides a REST API at
+  api.domestika.org that powers its web and mobile applications, exposing course
+  catalog data, user enrollment information, and community features. Domestika for
+  Business extends the platform to organizations, enabling teams to purchase seat
+  licenses and track learner progress through a management dashboard. Creative
+  professionals and businesses can leverage Domestika's catalog and learner data
+  to integrate creative skills development into their workflows and tooling.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/domestika/refs/heads/main/apis.yml
+created: 2026-06-13
+modified: 2026-06-13
+specificationVersion: "0.19"
+tags:
+  - Creative Education
+  - Online Learning
+  - Courses
+  - Design
+  - Photography
+  - Illustration
+  - Enterprise Learning
+  - REST API
+apis:
+  - aid: domestika:domestika-api
+    name: Domestika API
+    description: >
+      The Domestika REST API at api.domestika.org is the internal backbone of
+      the Domestika platform, providing access to course catalog listings,
+      learner enrollment records, user profiles, community content, and media
+      assets. The API uses token-based authentication and powers the main
+      domestika.org web application as well as iOS and Android mobile clients.
+      Business customers can use API capabilities through the Domestika for
+      Business management dashboard to manage team seat assignments and track
+      learner progress across their organization.
+    humanURL: https://www.domestika.org
+    baseURL: https://api.domestika.org
+    tags:
+      - Courses
+      - Enrollment
+      - Users
+      - Creative Education
+    properties:
+      - type: Documentation
+        url: https://www.domestika.org/en/organizations
+      - type: OpenAPI
+        url: https://api.domestika.org
+common:
+  - type: Website
+    url: https://www.domestika.org
+  - type: Documentation
+    url: https://www.domestika.org/en/organizations
+  - type: GitHubOrg
+    url: https://github.com/domestika
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/domestika
+  - type: Blog
+    url: https://www.domestika.org/en/blog
+  - type: Pricing
+    url: https://www.domestika.org/en/organizations
+  - type: X
+    url: https://x.com/Domestika
+  - type: Plans
+    url: plans/domestika-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/domestika-rate-limits.yml
+  - type: FinOps
+    url: finops/domestika-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

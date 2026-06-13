@@ -1,0 +1,75 @@
+specificationVersion: "1.0"
+id: domestika-finops
+name: Domestika FinOps Framework
+description: >
+  FinOps considerations for organizations integrating with or subscribing to
+  Domestika's platform, aligned with the FinOps Foundation FOCUS specification.
+  Domestika's primary cost drivers are seat-based Business plan subscriptions
+  and per-course purchases. Cost optimization focuses on seat utilization,
+  annual vs monthly billing decisions, and right-sizing team seat bundles
+  to match actual learner demand.
+url: https://www.domestika.org/en/organizations
+created: 2026-06-13
+modified: 2026-06-13
+provider: Domestika
+currency: USD
+costDrivers:
+  - name: Business Seat Subscriptions
+    description: >
+      Primary cost for organizations using Domestika for Business. Charged
+      per seat bundle (10, 20, or 50 seats) with volume discounts. Unused
+      seats represent direct financial waste and should be monitored via the
+      management dashboard.
+    type: subscription
+    unit: seat-bundle
+    optimization:
+      - Review seat utilization monthly via the Business dashboard.
+      - Right-size bundles to avoid paying for unused seats.
+      - Consolidate multiple small purchases into larger bundles for deeper discounts.
+  - name: Individual Course Purchases
+    description: >
+      Ad-hoc purchases of individual courses outside of a subscription or
+      Business plan. Can accumulate significantly if not governed centrally.
+    type: on-demand
+    unit: course
+    optimization:
+      - Evaluate whether Domestika Plus or a Business plan would be more cost-effective
+        for learners purchasing multiple courses per year.
+      - Centralize course purchase approvals to avoid redundant spending.
+  - name: Domestika Plus Subscriptions
+    description: >
+      Individual or employee-paid Domestika Plus subscriptions providing unlimited
+      course access. Shadow IT risk if employees subscribe on personal accounts
+      using corporate payment methods.
+    type: subscription
+    unit: user-month
+    optimization:
+      - Audit employee Domestika Plus subscriptions to consolidate under Business plans.
+      - Compare annual vs monthly billing; annual billing provides significant savings.
+billing:
+  model: subscription-and-transactional
+  cycles:
+    - monthly
+    - annually
+  notes: >
+    Business plan bundles are purchased as one-time bundles of logins rather than
+    recurring monthly subscriptions. Domestika Plus is billed monthly or annually.
+    Enterprise pricing is negotiated directly with the Domestika sales team.
+costAllocation:
+  recommended:
+    - tag: team
+      description: Tag seat assignments by team or department in the Business dashboard.
+    - tag: cost-center
+      description: Allocate Domestika for Business expenditure to the relevant L&D or HR cost center.
+    - tag: project
+      description: Where courses are tied to a specific project or initiative, track accordingly.
+  notes: >
+    Domestika for Business provides a management dashboard for tracking seat
+    usage and learner progress, which can inform chargeback and showback reporting
+    for internal FinOps processes.
+budgeting:
+  recommendations:
+    - Establish an annual L&D budget allocation for Domestika seat bundles.
+    - Monitor monthly active learner counts relative to purchased seat inventory.
+    - Negotiate enterprise contracts annually to lock in pricing and avoid mid-year price changes.
+    - Use Domestika's seasonal promotional discounts (often 50%+ off) for individual course purchases.
