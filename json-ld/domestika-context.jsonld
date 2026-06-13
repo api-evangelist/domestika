@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "domestika": "https://www.domestika.org/vocab#",
+    "aid": "domestika:aid",
+    "baseURL": "domestika:baseURL",
+    "course": "https://schema.org/Course",
+    "courseCategory": "domestika:courseCategory",
+    "enrollment": "domestika:enrollment",
+    "instructor": "https://schema.org/instructor",
+    "learner": "domestika:learner",
+    "seatLicense": "domestika:seatLicense",
+    "teamProgress": "domestika:teamProgress",
+    "creativeSkill": "domestika:creativeSkill",
+    "communityContent": "domestika:communityContent",
+    "mediaAsset": "domestika:mediaAsset",
+    "Organization": "https://schema.org/Organization",
+    "Person": "https://schema.org/Person",
+    "CreativeWork": "https://schema.org/CreativeWork",
+    "LearningResource": "https://schema.org/LearningResource",
+    "provider": {
+      "@id": "domestika:provider",
+      "@type": "@id"
+    }
+  },
+  "@type": "Organization",
+  "@id": "https://www.domestika.org",
+  "name": "Domestika",
+  "description": "Domestika is an online creative education platform connecting over 8 million creative professionals and learners with high-quality courses across illustration, design, photography, marketing, and more.",
+  "url": "https://www.domestika.org",
+  "sameAs": [
+    "https://x.com/Domestika",
+    "https://www.linkedin.com/company/domestika",
+    "https://github.com/domestika"
+  ],
+  "domestika:api": {
+    "@type": "domestika:APIService",
+    "name": "Domestika API",
+    "baseURL": "https://api.domestika.org",
+    "domestika:resources": [
+      {
+        "@type": "domestika:Resource",
+        "name": "Courses",
+        "description": "Course catalog listings and metadata"
+      },
+      {
+        "@type": "domestika:Resource",
+        "name": "Enrollments",
+        "description": "Learner enrollment records and progress tracking"
+      },
+      {
+        "@type": "domestika:Resource",
+        "name": "Users",
+        "description": "User profiles and account information"
+      },
+      {
+        "@type": "domestika:Resource",
+        "name": "Community",
+        "description": "Community content and creative projects"
+      },
+      {
+        "@type": "domestika:Resource",
+        "name": "Media",
+        "description": "Media assets associated with courses and projects"
+      }
+    ],
+    "domestika:businessFeatures": [
+      {
+        "@type": "domestika:Feature",
+        "name": "Seat Licenses",
+        "description": "Team seat assignment and management for Domestika for Business"
+      },
+      {
+        "@type": "domestika:Feature",
+        "name": "Progress Tracking",
+        "description": "Learner progress monitoring across an organization"
+      }
+    ]
+  }
+}

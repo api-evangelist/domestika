@@ -70,6 +70,10 @@ common:
     url: rate-limits/domestika-rate-limits.yml
   - type: FinOps
     url: finops/domestika-finops.yml
+  - type: Blogs
+    url: blogs/blogs.json
+  - type: JSONLDContext
+    url: json-ld/domestika-context.jsonld
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
