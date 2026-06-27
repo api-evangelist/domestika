@@ -70,7 +70,7 @@ common:
     url: rate-limits/domestika-rate-limits.yml
   - type: FinOps
     url: finops/domestika-finops.yml
-  - type: Blogs
+  - type: Blog
     url: blogs/blogs.json
   - type: JSONLDContext
     url: json-ld/domestika-context.jsonld
