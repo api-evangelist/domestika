@@ -54,6 +54,11 @@ apis:
     tags:
       - Courses
       - Enrollment
+      - User
+      - Creative Education
+    tags_raw:
+      - Courses
+      - Enrollment
       - Users
       - Creative Education
     properties:
