@@ -88,3 +88,48 @@ plans:
         currency: USD
         notes: Contact Domestika sales team for enterprise pricing.
     seats: 51+
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - metered
+  - negotiated
+  - subscription
+  units: []
+  plans:
+  - name: Individual Course
+    access: other
+    model: metered
+    model_how: stated
+    units: []
+    periods: []
+  - name: Domestika Plus
+    access: other
+    model: subscription
+    model_how: stated
+    units: []
+    periods: []
+  - name: Business 10 Seats
+    access: other
+    model: subscription
+    model_how: stated
+    units: []
+    periods: []
+  - name: Business 20 Seats
+    access: other
+    model: subscription
+    model_how: stated
+    units: []
+    periods: []
+  - name: Business 50 Seats
+    access: other
+    model: subscription
+    model_how: stated
+    units: []
+    periods: []
+  - name: Business Enterprise
+    access: negotiated
+    model: negotiated
+    model_how: stated
+    units: []
+    periods: []
