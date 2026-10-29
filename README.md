@@ -1,4 +1,4 @@
-# Domestika (domestika)
+# Domestika
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,55 +66,108 @@
 
 Domestika is an online creative education platform that connects over 8 million creative professionals and learners with high-quality courses across illustration, design, photography, marketing, and more. The platform provides a REST API at api.domestika.org that powers its web and mobile applications, exposing course catalog data, user enrollment information, and community features. Domestika for Business extends the platform to organizations, enabling teams to purchase seat licenses and track learner progress through a management dashboard. Creative professionals and businesses can leverage Domestika's catalog and learner data to integrate creative skills development into their workflows and tooling.
 
-- **APIs.json:** https://raw.githubusercontent.com/api-evangelist/domestika/refs/heads/main/apis.yml
-- **Naftiko:** https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=domestika-api-evangelist&utm_content=repo
+**Areas:** Creative Education · E-Learning · Courses · Design · Photography · Illustration · Enterprise Learning · REST API
 
-## Tags
+## Domestika on APIs.io
 
-- Creative Education
-- Online Learning
-- Courses
-- Design
-- Photography
-- Illustration
-- Enterprise Learning
-- REST API
+Everything profiled for Domestika is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/domestika/](https://apis.io/providers/domestika/)** — or go straight to one of the APIs or properties below.
 
-## APIs
+### APIs (1)
 
-| Name | Description | Human URL | Base URL |
-|------|-------------|-----------|----------|
-| Domestika API | REST API powering course catalog, enrollment, user profiles, and business management. | https://www.domestika.org | https://api.domestika.org |
+- [Domestika API](https://apis.io/apis/domestika/domestika-api/) — The Domestika REST API at api.domestika.org is the internal backbone of the Domestika platform, providing access to course catalog listings, learner…
 
-## Plans / Rate Limits / FinOps
+### Published properties
 
-| Resource | Path |
-|----------|------|
-| Plans & Pricing | [plans/domestika-plans-pricing.yml](plans/domestika-plans-pricing.yml) |
-| Rate Limits | [rate-limits/domestika-rate-limits.yml](rate-limits/domestika-rate-limits.yml) |
-| FinOps | [finops/domestika-finops.yml](finops/domestika-finops.yml) |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### JSON-LD (1)
 
-| Field | Value |
-|-------|-------|
-| Created | 2026-06-13 |
-| Modified | 2026-06-13 |
+Linked-data contexts for the provider's vocabulary.
 
-## Common
+- [Domestika Context](https://apis.io/jsonld/domestika/domestika-context/)
 
-| Type | URL |
-|------|-----|
-| Website | https://www.domestika.org |
-| Documentation | https://www.domestika.org/en/organizations |
-| GitHub Org | https://github.com/domestika |
-| LinkedIn | https://www.linkedin.com/company/domestika |
-| Blog | https://www.domestika.org/en/blog |
-| Pricing | https://www.domestika.org/en/organizations |
-| X | https://x.com/Domestika |
+#### Security (1)
 
-## Maintainers
+Authentication, trust centre, and vulnerability disclosure.
 
-| Name | Email |
-|------|-------|
-| Kin Lane | kin@apievangelist.com |
+- [Domestika Domain Security](https://apis.io/security/domestika/domestika-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Domestika Plans Pricing](https://apis.io/plans/domestika/domestika-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Domestika Rate Limits](https://apis.io/rate-limits/domestika/domestika-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Domestika Finops](https://apis.io/finops/domestika/domestika-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.domestika.org)
+- [Documentation](https://www.domestika.org/en/organizations)
+- [Pricing](https://www.domestika.org/en/organizations)
+- [Blog](https://www.domestika.org/en/blog)
+
+## API Evangelist rating
+
+**Kin Score 20.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 34.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/domestika/](https://apis.io/providers/domestika/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Domestika: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/domestika/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
